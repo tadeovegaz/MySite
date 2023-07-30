@@ -3,13 +3,15 @@ import "../css/navbar.css"
 import { FaBars } from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';
 import { useState } from "react";
+import { FiX } from "react-icons/fi";
+
 
 const Navbar = () => {
     const [Mobile, setMobile] = useState(false)
 
     return (
         <nav className="navbar">
-                <h3 className="logo">Logo</h3>
+                <h3 className="logo">Vegaz</h3>
                 <ul className={Mobile? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
                     <Link to='/' className='home'>
                         <li>Home</li>
@@ -19,7 +21,7 @@ const Navbar = () => {
                     </Link>
                 </ul>
                 <button className="mobile-menu-icon" onClick={() => setMobile(!Mobile)} >
-                    {Mobile ? <ImCross /> : <FaBars />}
+                    {Mobile ? <FiX /> : <FaBars />}
                 </button>
         </nav>
     )
