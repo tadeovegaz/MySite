@@ -11,18 +11,18 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-                <h3 className="logo pl-4">icoris</h3>
-                <ul className={Mobile? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
-                    <Link to='/' className='home'>
-                        <li>Hello</li>
-                    </Link>
-                    <Link to='/about' className='home'>
-                        <li>About</li>
-                    </Link>
-                </ul>
-                <button className="mobile-menu-icon" onClick={() => setMobile(!Mobile)} >
-                    {Mobile ? <FiX /> : <FaBars />}
-                </button>
+            <h3 className="logo pl-4">icoris</h3>
+            <ul className={Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
+                <Link to='/' className='home'>
+                    <li>Hello</li>
+                </Link>
+                <Link to='/about' className='home'>
+                    <li>About</li>
+                </Link>
+            </ul>
+            <button className="mobile-menu-icon" onClick={() => setMobile(!Mobile)} >
+                {Mobile ? <FiX /> : <FaBars />}
+            </button>
         </nav>
     )
 }

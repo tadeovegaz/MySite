@@ -58,9 +58,27 @@
 }
 
 .recetproyects {
-  color: #dbebf2;
+  color: #b6d2de;
   text-align: left;
   font-weight: bolder;
   font-size: 40px;
 
+}
+
+.cardtitle {
+  color: rgb(123, 187, 129);
+} 
+
+h2 {
+  font-size: 50px;
+  color: rgb(158, 217, 164);
+  font-weight: bold;
+  font-family: 'Borel', cursive;
+  text-align: center;
+}
+
+
+.photo {
+  width: 50%;
+  border-radius: 10;
 }

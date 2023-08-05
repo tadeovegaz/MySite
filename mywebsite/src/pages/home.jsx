@@ -1,21 +1,26 @@
 import { Fade } from "react-awesome-reveal";
 import { BsGithub } from "react-icons/bs";
-import {AiFillLinkedin} from "react-icons/ai"
+import { AiFillLinkedin } from "react-icons/ai"
+import Card from "../components/card";
 
 const Home = () => {
   return (
-    <div className="hero">
-      <Fade>
-        <h1>Hi. Im Tadeo Vega</h1>
-      </Fade>
-      <p className="descripccion">
-        Deeply passionate about creating user experiences and web applications.
-      </p>
-      <div className="columns-2	 text-center">
-        <BsGithub className="iconos"/>
-        <AiFillLinkedin className="iconos"/>
+    <div>
+      <div className="hero">
+        <Fade delay={500}>
+          <h1>Hi. I'm Tadeo Vega</h1>
+        </Fade>
       </div>
-      <h2 className="recetproyects">Recent projects</h2>
+      <div class="container mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div className="mx-auto">
+            <h1>Foto</h1>
+          </div>
+          <div>
+            <h2 className="">I'm a Product Designer working remotely from 14°C Dublin, Ireland.</h2>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
