@@ -10,11 +10,8 @@ function App() {
       <div className="gradient">
         <Router>
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
         </Router>
+        <Home />
       </div>
     </>
   );

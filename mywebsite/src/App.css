@@ -42,8 +42,8 @@
 
 .gradient {
   background: linear-gradient(90deg, #0F2027, #203A43, #2C5364);
-  height: 100vh;
-  width: 100vw;
+  height: auto;
+  width: auto;
 }
 
 .descripccion {
@@ -79,6 +79,19 @@ h2 {
 
 
 .photo {
-  width: 50%;
-  border-radius: 10;
+  overflow: hidden;
+  width: 60%;
+  border-radius: 70% 70% 10% 10%;
+  
 }
+
+.mainparrafo {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  text-align: left;
+}
+
+.parrafo {
+  color: white;
+}
+
